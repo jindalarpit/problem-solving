@@ -29,7 +29,7 @@ Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 = 17 + 5
 = 22
  */
-public class ReveresePolishNotation {
+public class ReversePolishNotation {
 
     public static void main(String[] args) {
         String[] input = {"10","6","9","3","+","-11","*","/","*","17","+","5","+"};
