@@ -1,4 +1,4 @@
-# List of problems 
+# List of problems solved
 
 | # | Problem Description | Solution |
 |:---:| ----- | :--------: |
