@@ -8,3 +8,4 @@
 |4. | [Word Break II](https://leetcode.com/problems/word-break-ii/)|[Java](https://github.com/jindalarpit/problem-solving/blob/main/src/com/problems/java/WordBreakII.java)|
 |5. | [Median of Two sorted Array](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[Java](https://github.com/jindalarpit/problem-solving/blob/main/src/com/problems/java/MedianOfTwoSortedArray.java)|
 |6. | [Merge Interval](https://leetcode.com/problems/merge-intervals/) | [Java](https://github.com/jindalarpit/problem-solving/blob/main/src/com/problems/java/MergeInterval.java) |
+|7. | [Word Ladder](https://leetcode.com/problems/word-ladder/) | [Java](https://github.com/jindalarpit/problem-solving/blob/main/src/com/problems/java/WordLadder.java) |
