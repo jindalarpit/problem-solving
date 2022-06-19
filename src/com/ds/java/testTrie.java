@@ -8,26 +8,25 @@ public class testTrie {
     public static void main(String[] args) {
         List<String> stringList = Arrays.stream(new String[]{"test", "tent" , "rest", "reck"}).toList();
         Trie trie = new Trie();
-        for(int i = 0; i<stringList.size(); i++){
-            String currString = stringList.get(i);
+        for (String currString : stringList) {
             Trie root = trie;
-            for(char c: currString.toCharArray()){
-                if(!root.charMap.containsKey(c)){
+            for (char c : currString.toCharArray()) {
+                if (!root.charMap.containsKey(c)) {
                     root.charMap.put(c, new Trie());
                 }
+                if (!root.wordList.contains(currString))
+                    root.wordList.add(currString);
                 root = root.charMap.get(c);
-                root.wordIndex.add(i);
+                root.wordList.add(currString);
             }
         }
         printTrie(trie);
     }
 
     private static void printTrie(Trie trie) {
-        if(trie.charMap.isEmpty())
-            return;
-        else{
+        if(!trie.charMap.isEmpty()) {
             System.out.println("KeySet: " + trie.charMap.keySet());
-            System.out.println("wordIndex: " + trie.wordIndex);
+            System.out.println("wordList: " + trie.wordList);
             for(char c: trie.charMap.keySet())
                 printTrie(trie.charMap.get(c));
         }

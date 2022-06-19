@@ -7,5 +7,6 @@ import java.util.Map;
 
 public class Trie {
     Map<Character, Trie> charMap = new HashMap<>();
-    List<Integer> wordIndex = new ArrayList<>();
+    List<String> wordList = new ArrayList<>();
+
 }
