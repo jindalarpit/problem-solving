@@ -40,11 +40,11 @@ public class LongestPalindromicSubstring {
         return longestPalindrome;
     }
 
-    private static String findPalindrome(String s, int begin, int end) {
-        while(begin>=0 && end < s.length() && s.charAt(begin) == s.charAt(end)){
-            begin--;
-            end++;
+    private static String findPalindrome(String s, int left, int right) {
+        while(left>=0 && right < s.length() && s.charAt(left) == s.charAt(right)){
+            left--;
+            right++;
         }
-        return s.substring(begin+1,end);
+        return s.substring(left+1,right);
     }
 }
